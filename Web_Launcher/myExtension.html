@@ -13,6 +13,7 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css">
     <style>
      
 
@@ -95,7 +96,7 @@
         color: #2f5876;
       }
     </style>
-    <script src="popup.js"></script>
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -107,9 +108,19 @@
       </h1>
     </div>
     <div class="modal-content">
-      <p>Quick Access Developer Website </p>
+      <div class="col-md-2">
+      <p>Quick Access Developer Website 
+       </p>
+       </div>
+       <div class="col-md-2">
+        <button onclick="add()">
+       <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+        </div>
+        
+
     </div>
-    <div class="modal-icons">
+    <div class="modal-icons" id="dynamic">
       <div class="flex-container">
         <div class="icon">
           <a href="https://www.google.com" target="_blank">
@@ -127,7 +138,9 @@
             <i class="fa fa-youtube" style="color:gray "></i>
           </a>
         </div>
+        
       </div>
     </div>
+
   </body>
 </html>
